@@ -14,8 +14,10 @@ Before the world collapses;
 No one 
 will spare anyone
 
---Völuspaà 45.
+--Vǫluspá 45.
 </center>
+</br>
+</br>
 
 
 
