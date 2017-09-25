@@ -25,49 +25,29 @@ will spare anyone
 
 ----------
 
-### **string2opcode.py**
-
-> Usage:
-```
-[*] Convert string to Opcode (v1.0)
-[*] Author Amonsec
-
-[*] Usage: python string2opcode.py [options] <values>
-[*] Options: 
-	 -f; --file	 Convert string(s) in a given file
-	 -r; --raw	 Convert the given string in argument
-
-[*] Usage Examples: 
-	 python string2opcode.py --file test.txt
-	 python string2opcode.py --file /root/Desktop/test.txt
-	 python string2opcode.py --raw lulzing
-	 python string2opcode.py --raw 'Opcode to OP'
-
-[*] Badchars Examples: 
-	 Badchars: \x41
-	 Badchars: \x00\x0a\x0d\x20
-```
+### **ull.py  -  The hunter god**
+He will create an egghunter with your desired tag.
 
 > Example:
 ```
-root@ths-amonsec:~/Desktop# python string2opcode.py --raw 'Opcode for lulz'
-[*] Convert string to Opcode (v1.0)
-[*] Author Amonsec
+root@kali:/opt/valhalla# python ull.py Amon
+[*] Your tag: Amon
+[+] Hexadecimal format: 
+6681caff0f42526a0258cd2e3c055a74efb8416d6f6e8bfaaf75eaaf75e7ffe7
 
-[*] Badchars: \x65
-[+] Hexchain lenght: 32 bytes
-[+] Hexchain: :
+[+] Python format: 
+egghunter = ''
+egghunter += '\x66\x81\xca\xff\x0f\x42\x52\x6a\x02\x58'
+egghunter += '\xcd\x2e\x3c\x05\x5a\x74\xef\xb8'
+egghunter += '\x41\x6d\x6f\x6e'
+egghunter += '\x8b\xfa\xaf\x75\xea\xaf\x75\xe7\xff\xe7'
 
-207a6c756c20726f662065646f63704f
+[+] C format: 
+unsigned char shellcode[] = \''
+"\x66\x81\xca\xff\x0f\x42\x52\x6a\x02\x58"
+"\xcd\x2e\x3c\x05\x5a\x74\xef\xb8"
+"\x41\x6d\x6f\x6e"
+"\x8b\xfa\xaf\x75\xea\xaf\x75\xe7\xff\xe7";
 
-[+] Your Opcode: 
-
-push 207a6c75 ;  zlu
-push 6c20726f ; l ro
-push 66206564 ; f ed
-push 6f63704f ; ocpO
-
-[-] Badchars detected: \x65
-[*] Have Fun 1337
-root@ths-amonsec:~/Desktop# 
+root@kali:/opt/valhalla#
 ```
